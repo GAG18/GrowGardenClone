@@ -1,0 +1,84 @@
+✅ You must exchange the code at /token endpoint
+After Roblox redirects to your redirect_uri like:
+
+perl
+Copy
+Edit
+https://yourdomain.com/auth/callback?code=abc123&state=xyz
+You must send a POST request to:
+
+bash
+Copy
+Edit
+https://apis.roblox.com/oauth/v1/token
+With this data (form-encoded):
+
+Key	Value
+client_id	Your client ID
+client_secret	Your client secret
+grant_type	authorization_code
+code	The code from the URL param
+redirect_uri	Must match the original one
+code_verifier	If using PKCE (optional)
+
+🧠 Why you get "authorization expired" without this step
+Roblox’s code is one-time use and short-lived (~10 min).
+
+If your frontend never sends it to /token, Roblox thinks it’s expired or invalid on next attempt.
+
+Reloading the page or trying to reuse the same code results in 400.
+
+🧪 To Debug Right Now
+On your /auth/callback page/component:
+
+Log the query string:
+
+tsx
+Copy
+Edit
+const params = new URLSearchParams(window.location.search);
+console.log("CODE:", params.get("code"));
+console.log("STATE:", params.get("state"));
+Immediately exchange the code:
+
+ts
+Copy
+Edit
+const code = params.get("code");
+const redirectUri = `${window.location.origin}/auth/callback`;
+
+const response = await fetch("https://apis.roblox.com/oauth/v1/token", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded",
+  },
+  body: new URLSearchParams({
+    client_id: import.meta.env.VITE_ROBLOX_CLIENT_ID!,
+    client_secret: import.meta.env.VITE_ROBLOX_CLIENT_SECRET!,
+    grant_type: "authorization_code",
+    code: code!,
+    redirect_uri: redirectUri,
+  }),
+});
+
+const data = await response.json();
+console.log("Token response:", data);
+✅ Once You Get a Token
+Use it to fetch user info:
+
+ts
+Copy
+Edit
+const profile = await fetch("https://apis.roblox.com/oauth/v1/userinfo", {
+  headers: {
+    Authorization: `Bearer ${access_token}`,
+  },
+});
+const userInfo = await profile.json();
+Would You Like a /auth/callback Page Example?
+I can give you a complete React or Next.js callback page that handles this properly. Let me know what framework you're using.
+
+
+
+
+

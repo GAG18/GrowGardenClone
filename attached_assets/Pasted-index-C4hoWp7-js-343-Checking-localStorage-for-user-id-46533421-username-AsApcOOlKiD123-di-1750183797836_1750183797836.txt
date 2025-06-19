@@ -1,0 +1,49 @@
+index-C4hoWp7_.js:343 Checking localStorage for user: {"id":46533421,"username":"AsApcOOlKiD123","displayName":"SLAM","profileImageUrl":"/api/proxy-image?url=https%3A%2F%2Ftr.rbxcdn.com%2F30DAY-AvatarHeadshot-2017D8AD8D408A9B5FF0095D3F126CD1-Png%2F150%2F150%2FAvatarHeadshot%2FPng%2FnoFilter"}
+index-C4hoWp7_.js:343 Parsed user data: {id: 46533421, username: 'AsApcOOlKiD123', displayName: 'SLAM', profileImageUrl: '/api/proxy-image?url=https%3A%2F%2Ftr.rbxcdn.com%2…Png%2F150%2F150%2FAvatarHeadshot%2FPng%2FnoFilter'}
+content-script.js:105056 current location https://grow-garden-clone-awsaccamr1989.replit.app/
+index-C4hoWp7_.js:343 Rendering user avatar: {username: 'AsApcOOlKiD123', profileImageUrl: '/api/proxy-image?url=https%3A%2F%2Ftr.rbxcdn.com%2…Png%2F150%2F150%2FAvatarHeadshot%2FPng%2FnoFilter', displayName: 'SLAM'}
+index-C4hoWp7_.js:343 Rendering user avatar: {username: 'AsApcOOlKiD123', profileImageUrl: '/api/proxy-image?url=https%3A%2F%2Ftr.rbxcdn.com%2…Png%2F150%2F150%2FAvatarHeadshot%2FPng%2FnoFilter', displayName: 'SLAM'}
+index-C4hoWp7_.js:40 ReferenceError: Link is not defined
+    at op (index-C4hoWp7_.js:343:26874)
+    at Bd (index-C4hoWp7_.js:38:16998)
+    at du (index-C4hoWp7_.js:40:3139)
+    at Dx (index-C4hoWp7_.js:40:44737)
+    at Ox (index-C4hoWp7_.js:40:39727)
+    at rj (index-C4hoWp7_.js:40:39655)
+    at Wi (index-C4hoWp7_.js:40:39508)
+    at Nu (index-C4hoWp7_.js:40:35875)
+    at Rx (index-C4hoWp7_.js:40:34826)
+    at S (index-C4hoWp7_.js:25:1562)
+uu @ index-C4hoWp7_.js:40
+n.callback @ index-C4hoWp7_.js:40
+Vh @ index-C4hoWp7_.js:38
+sm @ index-C4hoWp7_.js:40
+Tx @ index-C4hoWp7_.js:40
+ej @ index-C4hoWp7_.js:40
+oj @ index-C4hoWp7_.js:40
+mr @ index-C4hoWp7_.js:40
+Rx @ index-C4hoWp7_.js:40
+S @ index-C4hoWp7_.js:25
+I @ index-C4hoWp7_.js:25
+index-C4hoWp7_.js:343 Uncaught ReferenceError: Link is not defined
+    at op (index-C4hoWp7_.js:343:26874)
+    at Bd (index-C4hoWp7_.js:38:16998)
+    at du (index-C4hoWp7_.js:40:3139)
+    at Dx (index-C4hoWp7_.js:40:44737)
+    at Ox (index-C4hoWp7_.js:40:39727)
+    at rj (index-C4hoWp7_.js:40:39655)
+    at Wi (index-C4hoWp7_.js:40:39508)
+    at Nu (index-C4hoWp7_.js:40:35875)
+    at Rx (index-C4hoWp7_.js:40:34826)
+    at S (index-C4hoWp7_.js:25:1562)
+op @ index-C4hoWp7_.js:343
+Bd @ index-C4hoWp7_.js:38
+du @ index-C4hoWp7_.js:40
+Dx @ index-C4hoWp7_.js:40
+Ox @ index-C4hoWp7_.js:40
+rj @ index-C4hoWp7_.js:40
+Wi @ index-C4hoWp7_.js:40
+Nu @ index-C4hoWp7_.js:40
+Rx @ index-C4hoWp7_.js:40
+S @ index-C4hoWp7_.js:25
+I @ index-C4hoWp7_.js:25
